@@ -6,44 +6,68 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id="title"> Muaomar Survey Form</h1>
-  <p id="description">thanks for taking time to improve our page.</p>
+  <h1 id="title">How can we improve the premier league performance</h1>
+  <p>Thanks for taking time to help improve the premier league</p>
+
+  <form id="survey-form">
+    <div class="input-element">
+      <label id="name-label">Name</label>
+      <input type="text" id="name" placeholder="enter your name">
+    </div>
+
+    <div class="input-element">
+      <label id="email-label">Email</label>
+      <input type="email" id="email" placeholder="enter email" required>
+    </div>
 
 
-<!--------------type name selection------->
- <form action="" id="survey-form">
-  <div class="form-group">
-  <label> Name</label>
-  <input type="text" placeholder="Enter your name"  id="Email">
-</div>
+    <div class="input-element">
+      <label id="number-label">Age</label>
+      <input type="number" id="age" min="5" max="100" placeholder="enter your age" required>
+    </div>
 
-<!--------------------type Email selection------>
 
-<div class="form-group">
-  <label for="email">Email</label>
-  <input type="email"  id="mail" placeholder="Enter your email" required>
-</div>
+    <div class="input-element">
+      <label id="select-label">who is your favourite team?</label>
+      <select id="dropdown">
+        <option>Arsenal</option>
+        <option>Chalsea</option>
+        <option>Astonvilla</option>
+        <option>Liverpool</option>
+      </select>
+    </div>
 
-<!-----------------age---------------->
 
-<div class="form-group">
-  <label for="age">Age <span>(Optional)</span></label>
-  <input type="number"  id="number" placeholder="Age" required>
-</div>
+    <!-----------------------radio------------------->
 
-<!-------------------question------------->
+    <div>
+      <label>Have you been to a game before</label>
+      <div><label><input type="radio" name="game"/>Yes</label></div>
+      <div><label><input type="radio" name="game"/>No</label></div>
+    </div>
 
-<div class="form-group">
-  <p id="quest">Which option best describes your current role?</p>
-  <select name="role" id="dropdown" class="formcontrol" required>
- <option value="" disabled selected>select current role</option>
 
- <option value="teacher">Manager</option>
- <option value="cook">Cook</option>
- <option value="engineer">Engineer</option>
- <option value="student">Student</option>
-  </select>
-</div>
- </form>
+<!---------------------checkboxes--------------->
+
+    <div class="input-element">
+      <label>Which teams do you think will win 2023 premier league title</label>
+      <div><label><input type="checkbox" name="game"/>Man city</label></div>
+      <div><label><input type="checkbox" name="game"/>Liverpool</label></div>
+      <div><label><input type="checkbox" name="game"/>Arsenal</label></div>
+      <div><label><input type="checkbox" name="game"/>Astonvilla</label></div>
+      <div><label><input type="checkbox" name="game"/>Manchester united</label></div>
+      <div><label><input type="checkbox" name="game"/>Chalsea</label></div>
+      <div><label><input type="checkbox" name="game"/>Westham</label></div>
+    </div>
+
+
+    <div>
+      <div><label>any comments or suggestions</label></div>
+      <textarea name="text" id="" cols="30" rows="5"></textarea>
+    </div>
+
+    <button type="submit" id="Submit">Submit</button>
+  </form>
+
 </body>
 </html>
